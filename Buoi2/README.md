@@ -3,7 +3,7 @@
 ### **CSS**
 
 - CSS viết tắt của Cascading Style Sheets.
-- CSS mô tả cách các phần tử HTML được hiển thị trên màn hình hoặc các phương tiện khác.
+- CSS tạo phong cách và định kiểu cho trang web được viết dưới dạng ngôn ngữ đánh dấu, như là HTML.
 - CSS giúp bạn kiểm soát bố cục của nhiều trang web cùng một lúc.
 
 ```html
@@ -30,7 +30,8 @@ _Lưu ý: Khi cấu trúc trang web càng lớn, việc quản lý file sẽ kh�
 
 2. Internal CSS:
 
-- Đặt trong mục `<head></head>` của file html, được cấu trúc bằng cặp thẻ `<style></style>`
+- Sử dụng thẻ `<style>` trong chính file html
+- Đặt trong mục `<head></head>` của file html, được cấu trúc bằng cặp thẻ `<style></styl>`
 - Viết css ở đầu trang web -> áp dụng kiểu dáng cho toàn bộ trang web
 
 ```html
@@ -207,11 +208,13 @@ p {
 - `margin`: Lề bao quanh vùng border
 
 Ví dụ:
+
 ![syntax](https://images.viblo.asia/7b08f130-4ff1-4555-96f9-f7228665f28f.jpg)
 
 `box-sizing`: mặc định là content-box
 
 _Sử dụng `box-sizing : box-sizing `thì phần width sẽ bao gồm thêm cả padding và border_
+
 ![syntax](https://images.viblo.asia/48e74ebe-d32e-41db-b116-5dd5bbe36a40.jpg)
 
 ### **Reset CSS**
