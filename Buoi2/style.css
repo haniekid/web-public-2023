@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+p {
+  /* this i
+    s a
+     single-line 
+    comment */
+  max-width: 60%;
+  text-indent: 50px;
+  text-align: justify;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+span {
+  text-decoration: line-through;
+}
+
+body {
+  /* background-color: #ccc;
+  background-image: url("./card_1.png") linear-gradient(0, red, green);
+  background-repeat: no-repeat;
+  background-position: right top; */
+  background-size: 200px;
+  /* background-attachment: fixed;  */
+
+  /* background: background-color background-image background-repeat background-position */
+  background: #ccc url("./card_1.png") no-repeat right top fixed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.box-1 {
+  background-color: rgb(128, 66, 0);
+  /* border-width: 2px; */
+  /* border-left: 5px;
+  border-right: 2px;
+  border-style: dashed;
+  border-color: pink; */
+
+  /* border: border-width border-style (required) border-color */
+  border: 10px solid black;
+  border-radius: 60%;
+}
+
+.box-2 {
+  background-color: green;
+  /* width: 100px;
+  height: 100px; */
+  /* padding-left: 30px; */
+  /* padding: 10px 20px; */
+  /* padding: 10px 20px 40px; */
+  padding: 50px;
+}
+
+.box-3 {
+  background-color: rgb(21, 0, 128);
+  /* margin: 30px; */
+  margin-left: 30px;
+  margin-right: 40px;
+  padding: 10px;
+}
+
+.content {
+  /* font-weight: bold;
+  font-variant: small-caps;
+  font-style: italic; */
+
+  /* font: font-style font-variant font-weight font-size/line-height font-family */
+  font: italic small-caps bold 20px "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
