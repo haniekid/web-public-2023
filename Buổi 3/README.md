@@ -147,7 +147,7 @@ div {
 }
 ```
 
-#### 6. Pesudo CSS Selector
+#### 6. Pseudo CSS Selector
 
 ```html
 <div class="container">
