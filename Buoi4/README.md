@@ -56,8 +56,8 @@ Mặc định các flex-item sẽ cố gắng nằm vừa trên 1 dòng
 
 7. `align-content`: tùy chỉnh linh hoạt khoảng trống theo trục cross
 
-- normal (default): items are packed in their default position as if no value was set.
-- flex-start / start: các items sẽ được đồn về phía start của flex-direction.
+- normal (default):
+- flex-start / start: các items sẽ được dồn về phía start của flex-direction.
 - flex-end / end: các items sẽ được đồn về phía end của flex-direction.
 - center:
 - space-between:
