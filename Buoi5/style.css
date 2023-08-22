@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+    height: 200vh;
+}
+
+.square {
+  width: 400px;
+  height: 400px;
+  background-color: red;
+}
+.square2 {
+  width: 250px;
+  height: 250px;
+  background-color: aqua;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+
+header {
+    background-color: orange;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 32px;
+    position: fixed;
+     top: 0;
+    left: 0;
+    right: 0;
+} */
+
+.menu-lv1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-item {
+  padding: 10px 20px;
+  background-color: aqua;
+  font-size: 32px;
+}
+
+.drop-down {
+  position: relative;
+}
+
+.drop-down:hover .menu-lv2 {
+  display: block;
+}
+
+.menu-lv2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200%;
+  display: none;
+}
+
+.menu-lv2 div {
+  padding: 10px 20px;
+  background-color: papayawhip;
+}
