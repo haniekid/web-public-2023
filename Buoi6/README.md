@@ -5,44 +5,61 @@ Tuy nhiên grid chưa được nhiều trình duyệt hỗ trợ như flexbox n�
 
 ## **Tổng quan**
 
-1. Grid container:
+### **1. Grid container:**
 
 - Là phần tử cha chứa tất cả các phần tử con trực tiếp của nó nằm trong grid.
 - Xác định vị trí ban đầu của các đường kẻ trong grid, cả dọc và ngang.
 
-2. Grid items:
+### **2. Grid items:**
 
 - Các phần tử con trực tiếp của grid container được ngăn cách nhau bằng các đường lines
 
-3. Grid Columns: Phần đường dọc của các grid-item được gọi là cột
+### **3. Grid Columns:**
+
+- Phần đường dọc của các grid-item được gọi là cột
 
 ![Grid Columns](https://www.w3schools.com/css/grid_columns.png)
 
-2. Grid Rows: Phần đường ngang của các grid-item được gọi là hàng
-   ![Grid Rows](https://www.w3schools.com/css/grid_rows.png)
+### **2. Grid Rows:**
 
-3. Grid Gaps: Khoảng cách giữa các cột/dòng gọi là gap
+- Phần đường ngang của các grid-item được gọi là hàng
+
+![Grid Rows](https://www.w3schools.com/css/grid_rows.png)
+
+### **3. Grid Gaps:**
+
+- Khoảng cách giữa các cột/dòng gọi là gap
 
 ![Grid Gaps](https://www.w3schools.com/css/grid_gaps.png)
 
-4. Grid Lines: Viền nằm giữa các cột và hàng.
-   ![Grid Lines](https://www.w3schools.com/css/grid_lines.png)
+### **4. Grid Lines:**
 
-5. Grid Tracks:
-   ![Grid Tracks](https://evondev.com/wp-content/uploads/2018/08/grid-tracks.png)
+- Viền nằm giữa các cột và hàng.
 
-   Mở F12 (Inspect Code) để nhìn thấy grid tracks một cách rõ ràng
+![Grid Lines](https://www.w3schools.com/css/grid_lines.png)
 
-   track columns/rows = columns/rows + 1;
-   track start: 1
+### **5. Grid Tracks:**
 
-6. Grid Cells: Đơn vị nhỏ nhất, hay ô lưới, (vd: nằm giữa grid row line 1 và line 2, grid column line 1 và line 2)
+![Grid Tracks](https://evondev.com/wp-content/uploads/2018/08/grid-tracks.png)
 
-7. Grid Area: Tổng không gian, có thể gồm nhiều cells
+Mở F12 (Inspect Code) để nhìn thấy grid tracks một cách rõ ràng
+
+track columns/rows = columns/rows + 1;
+track start: 1
+
+### **6. Grid Cells:**
+
+Đơn vị nhỏ nhất, hay ô lưới, (vd: nằm giữa grid row line 1 và line 2, grid column line 1 và line 2)
+
+### **7. Grid Area:**
+
+Tổng không gian , có thể gồm nhiều cells
 
 ## **Sử dụng CSS GRID**
 
-1. Định nghĩa một grid(lưới): biến một div thành một grid container
+### **1. Định nghĩa một grid(lưới):**
+
+Vidu: Biến một div thành một grid container
 
 ```css
 .grid-container {
@@ -50,8 +67,9 @@ Tuy nhiên grid chưa được nhiều trình duyệt hỗ trợ như flexbox n�
 }
 ```
 
-2. Tạo các cột và dòng
-   Có thể chia số cột và hàng tùy ý (thường dựa vào design thiết kế là 12 cột bằng nhau, đôi khi 8…)
+### **2. Tạo các cột và dòng**
+
+Có thể chia số cột và hàng tùy ý (thường dựa vào design thiết kế là 12 cột bằng nhau, đôi khi 8…)
 
 Syntax:
 `grid-template-columns`: [cột_1] [cột_2] [cột_3]... [cột_n];
@@ -79,13 +97,13 @@ _Shorthand: repeat()_
 grid-template-columns: 10% repeat(4, 20%) 10%;
 ```
 
-3. Grid-gap
+### **3. Grid-gap**
 
 - Tạo khoảng cách giữa các phần tử với nhau theo cột và hàng.
 - Gồm 2 thuộc tính: `grid-row-gap` va `grid-column-gap`
 - Shorthand: `grid-gap`: [grid-row-gap] [grid-column-gap];
 
-4. Grid column, Grid row
+### **4. Grid column, Grid row**
 
 - Xét vị trí cho các items
 
@@ -105,7 +123,7 @@ _Shorthand: `grid-row`, `grid-column`_
 }
 ```
 
-5.  Grid areas:
+### **5. Grid areas:**
 
 ```css
 .grid-container {
@@ -117,14 +135,14 @@ _Shorthand: `grid-row`, `grid-column`_
 }
 ```
 
-6.Span
+### **6. Span**
 
 .item {
 grid-column: <start-line> / span <value>;
 grid-row: <start-line> / span <value>;
 }
 
-7. grid-auto-flow
+### **7. grid-auto-flow**
 
 - grid implicit , explicit tracks: Khi container không đủ chỗ chứa cho item thì item sẽ bị rớt ra ngoài tạo nên 1 hàng mới và tạo nên các đường đánh dấu mới(gọi là Implicit Tracks)
 - Vì vậy, khi muốn xét chiều cao cho phần tử thừa đó ta sử dụng `grid-auto-flow` kết hợp với `grid-auto-rows`
