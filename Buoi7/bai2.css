@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container div {
+  width: 24%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.container div p {
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Tablet */
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+  .container div {
+    width: 48%;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .container div {
+    width: 100%;
+  }
+}
