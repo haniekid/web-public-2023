@@ -1,4 +1,4 @@
-# Nội dung Buổi 6: CSS Responsive
+# Nội dung Buổi 7: CSS Responsive
 
 ## 1. Responsive
 
