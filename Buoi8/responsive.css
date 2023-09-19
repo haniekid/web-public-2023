@@ -1,0 +1,21 @@
+@media screen and (max-width: 600px) {
+  section {
+    padding: 0 10%;
+  }
+  .navbar {
+    display: none;
+  }
+  .banner img {
+    height: 30vh;
+  }
+  .banner-text p {
+    display: none;
+    /* visibility: hidden; */
+  }
+  .item-img {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+}
